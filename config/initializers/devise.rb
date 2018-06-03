@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require 'omniauth-okta'
+require 'omniauth-oktaoauth'
 OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE if Rails.env.development?
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
@@ -170,7 +170,7 @@ Devise.setup do |config|
   # one (and only one) @ exists in the given string. This is mainly
   # to give user feedback and not to assert the e-mail validity.
   config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
-  config.omniauth(:okta,
+  config.omniauth(:oktaoauth,
                 ENV['OKTA_CLIENT_ID'],
                 ENV['OKTA_CLIENT_SECRET'],
                 :scope => 'openid profile email',
@@ -179,7 +179,7 @@ Devise.setup do |config|
                 :redirect_uri => ENV["OKTA_REDIRECT_URI"],
                 :auth_server_id => ENV['OKTA_AUTH_SERVER_ID'],
                 :issuer => ENV['OKTA_ISSUER'],
-                :strategy_class => OmniAuth::Strategies::Okta)
+                :strategy_class => OmniAuth::Strategies::Oktaoauth)
 
   # ==> Configuration for :timeoutable
   # The time you want to timeout the user session without activity. After this

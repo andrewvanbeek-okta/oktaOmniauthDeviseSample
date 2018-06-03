@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :omniauthable, omniauth_providers: [:okta]
+  devise :omniauthable, omniauth_providers: [:oktaoauth]
   has_many :authorizations
   validates :name, :email, :presence => true
 

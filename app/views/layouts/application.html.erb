@@ -18,10 +18,10 @@
   <div class="right menu">
   <div class="item">
     <% if !session[:oktastate] %>
-    <%= link_to "Sign In Or Sign Up", user_okta_omniauth_authorize_path %>
+    <%= link_to "Sign In Or Sign Up", user_oktaoauth_omniauth_authorize_path %>
     <% else %>
-    <%= link_to "App Dashboard", user_okta_omniauth_authorize_path, class: "item"%>
-   <%= link_to session[:oktastate][:info][:name], user_okta_omniauth_authorize_path, class: "item" %>
+    <%= link_to "App Dashboard", user_oktaoauth_omniauth_authorize_path, class: "item"%>
+   <%= link_to session[:oktastate][:info][:name], user_oktaoauth_omniauth_authorize_path, class: "item" %>
     <%= link_to "logout", ENV['OKTA_URL'] + "/login/signout?fromURI=" + request.base_url + "/logout", class: "item" %>
     <% end %>
   </div>
