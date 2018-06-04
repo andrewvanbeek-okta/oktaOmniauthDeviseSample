@@ -3,7 +3,7 @@ Project use Rails 5.1
 
 in the cmd line: Bundle install
 in the cmd line: rake db:create
-in the cmd line: rake db:migrate
+
 
 in the cmd line: bundle exec figaro install // generates appication.yaml file for ENV varaibles
 
@@ -24,3 +24,16 @@ OKTA_ISSUER: "your issuer or custom okta auth server issuer url"
 OKTA_AUTH_SERVER_ID: "the custom server id if you are using one if not leave blank"
 
 OKTA_REDIRECT_URI: "http://localhost:3000/users/auth/oktaoauth/callback"
+
+
+
+in the cmd line: rake db:migrate
+
+in the cmd line: rails s
+
+
+# Disclaimer
+
+If you run this on production comment line 3 in congig/initializers.rb with OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE if Rails.env.development?  
+
+This just allows for you not to reference a cert when doing locally development.  If you comment out and push to heroku, aws, or gcloud there should not be a problem.
