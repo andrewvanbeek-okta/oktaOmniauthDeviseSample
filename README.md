@@ -27,20 +27,7 @@ OKTA_AUTH_SERVER_ID: "the custom server id if you are using one if not leave bla
 OKTA_REDIRECT_URI: "http://localhost:3000/users/auth/oktaoauth/callback"
 
 
-example:
-```ruby
-  require 'omniauth-oktaoauth'
-  config.omniauth(:oktaoauth,
-                ENV['OKTA_CLIENT_ID'],
-                ENV['OKTA_CLIENT_SECRET'],
-                :scope => 'openid profile email',
-                :fields => ['profile', 'email'],
-                :client_options => {site: ENV['OKTA_ISSUER'], authorize_url: ENV['OKTA_ISSUER'] + "/v1/authorize", token_url: ENV['OKTA_ISSUER'] + "/v1/token"},
-                :redirect_uri => ENV["OKTA_REDIRECT_URI"],
-                :auth_server_id => ENV['OKTA_AUTH_SERVER_ID'],
-                :issuer => ENV['OKTA_ISSUER'],
-                :strategy_class => OmniAuth::Strategies::Oktaoauth)
-```
+
 
 
 in the cmd line: rake db:migrate
