@@ -16,7 +16,7 @@ OKTA_CLIENT_ID: "your value"
 
 OKTA_CLIENT_SECRET: "your value"
 
-OKTA_ORG: "your value" // whatever your before .okta is for example mine is vanbeektech because of vanbeektech.okta.com
+OKTA_ORG: "your value" 
 OKTA_DOMAIN: "okta"
 
 OKTA_URL: "your full okta tenant url"
@@ -27,8 +27,9 @@ OKTA_AUTH_SERVER_ID: "the custom server id if you are using one if not leave bla
 
 OKTA_REDIRECT_URI: "http://localhost:3000/users/auth/oktaoauth/callback"
 
+How to generate values in Okta.  Go to top header applications > create app.
 
-
+![alt text](https://drive.google.com/open?id=1f3Zb_aPA3IBbMtACDl71ZtXF6OC3pKEl)
 
 
 in the cmd line: rake db:migrate
