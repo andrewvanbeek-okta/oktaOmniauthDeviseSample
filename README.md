@@ -32,6 +32,8 @@ How to generate values in Okta.  Go to top header applications > create app.
 
 <a href="https://drive.google.com/uc?export=view&id=1f3Zb_aPA3IBbMtACDl71ZtXF6OC3pKEl"><img src="https://drive.google.com/uc?export=view&id=1f3Zb_aPA3IBbMtACDl71ZtXF6OC3pKEl"> 
   
+  # For the callback make sure you use whatever port you are running on, to use the default you should use 3000.
+  
  <a href="https://drive.google.com/uc?export=view&id=1B9X6CVdUyb3pI5OShr6QaIMUYEYzSTAG"><img src="https://drive.google.com/uc?export=view&id=1B9X6CVdUyb3pI5OShr6QaIMUYEYzSTAG"> 
   
  <a href="https://drive.google.com/uc?export=view&id=1FQwV3hdADFcAOHjmGtuN6leqVfvPaVIc"><img src="https://drive.google.com/uc?export=view&id=1FQwV3hdADFcAOHjmGtuN6leqVfvPaVIc"> 
