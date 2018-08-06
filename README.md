@@ -2,6 +2,7 @@
 Project use Rails 5.1
 
 in the cmd line: Bundle install
+
 in the cmd line: rake db:create
 
 
