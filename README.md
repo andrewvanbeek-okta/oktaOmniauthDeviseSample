@@ -29,7 +29,7 @@ OKTA_REDIRECT_URI: "http://localhost:3000/users/auth/oktaoauth/callback"
 
 How to generate values in Okta.  Go to top header applications > create app.
 
-![alt text](https://drive.google.com/open?id=1f3Zb_aPA3IBbMtACDl71ZtXF6OC3pKEl)
+![alt text](https://drive.google.com/file/d/1f3Zb_aPA3IBbMtACDl71ZtXF6OC3pKEl/view)
 
 
 in the cmd line: rake db:migrate
