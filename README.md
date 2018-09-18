@@ -30,20 +30,22 @@ OKTA_REDIRECT_URI: "http://localhost:3000/users/auth/oktaoauth/callback"
 
 How to generate values in Okta.  Go to top header applications > create app.
 
-<a href="https://drive.google.com/uc?export=view&id=1f3Zb_aPA3IBbMtACDl71ZtXF6OC3pKEl"><img src="https://drive.google.com/uc?export=view&id=1f3Zb_aPA3IBbMtACDl71ZtXF6OC3pKEl"> 
+<a href="https://drive.google.com/uc?export=view&id=1f3Zb_aPA3IBbMtACDl71ZtXF6OC3pKEl"><img src="https://drive.google.com/uc?export=view&id=1f3Zb_aPA3IBbMtACDl71ZtXF6OC3pKEl"></a>
   
   ### For the callback make sure you use whatever port you are running on, to use the default you should use 3000.
   
- <a href="https://drive.google.com/uc?export=view&id=1B9X6CVdUyb3pI5OShr6QaIMUYEYzSTAG"><img src="https://drive.google.com/uc?export=view&id=1B9X6CVdUyb3pI5OShr6QaIMUYEYzSTAG"> 
+ <a href="https://drive.google.com/uc?export=view&id=1B9X6CVdUyb3pI5OShr6QaIMUYEYzSTAG"><img src="https://drive.google.com/uc?export=view&id=1B9X6CVdUyb3pI5OShr6QaIMUYEYzSTAG"></a>
   
- <a href="https://drive.google.com/uc?export=view&id=1FQwV3hdADFcAOHjmGtuN6leqVfvPaVIc"><img src="https://drive.google.com/uc?export=view&id=1FQwV3hdADFcAOHjmGtuN6leqVfvPaVIc"> 
+ <a href="https://drive.google.com/uc?export=view&id=1FQwV3hdADFcAOHjmGtuN6leqVfvPaVIc"><img src="https://drive.google.com/uc?export=view&id=1FQwV3hdADFcAOHjmGtuN6leqVfvPaVIc"></a>
   
-  To learn about where to get the auth server value go to https://developer.okta.com/authentication-guide/implementing-authentication/set-up-authz-server
+To learn about where to get the auth server value go to https://developer.okta.com/authentication-guide/implementing-authentication/set-up-authz-server.
 
-in the cmd line: rake db:migrate
+Then, run the following commands in a terminal:
 
-in the cmd line: rails s
-
+```
+rake db:migrate
+rails s
+```
 
 # Disclaimer
 
