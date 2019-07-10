@@ -1,0 +1,29 @@
+<div class="ui inverted segment">
+  <h1>Signed-In/Created Users created from Okta, Omniauth, and ActiveRecord</h1>
+  <div class="ui inverted relaxed divided list">
+
+
+    <div class="item">
+      <div class="content">
+        <h2> <%= @user.name %> </h2>
+
+         <h3> access_token:</h3>
+
+          <% JSON.parse(@user.token).each do |token_field| %>
+            <%= token_field[0] %> :  <%= token_field[1] %> 
+            <br>  
+          <%end%>
+
+         <h3> id_token:</h3>
+
+          <% JSON.parse(@user.id_token).each do |id_token_field| %>
+            <%= id_token_field[0] %> :  <%= id_token_field[1] %> 
+            <br>  
+          <%end%>
+
+
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
