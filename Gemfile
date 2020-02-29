@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'json'
 gem 'omniauth-oktaoauth', '~> 0.1.6'
-gem 'bootstrap-sass', '3.3.6'
+gem 'bootstrap-sass', '3.4.1'
 gem 'figaro'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
