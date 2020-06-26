@@ -14,8 +14,8 @@ Rails.application.routes.draw do
   #
   # get 'sessions/failure'
   #
-  get   '/login', :to => 'sessions#new', :as => :login
-  get '/logout', :to => 'sessions#destroy'
+  get '/login', :to => 'sessions#new', as: :login
+  get '/logout', :to => 'sessions#destroy', as: :logout
 
 
 

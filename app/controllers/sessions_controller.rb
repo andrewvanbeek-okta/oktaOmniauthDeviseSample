@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:oktastate] = nil
-    redirect_to "/login"
+    redirect_to :root
   end
 
   def failure

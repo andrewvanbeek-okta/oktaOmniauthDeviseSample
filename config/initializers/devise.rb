@@ -175,7 +175,11 @@ Devise.setup do |config|
                 ENV['OKTA_CLIENT_SECRET'],
                 :scope => 'openid profile email',
                 :fields => ['profile', 'email'],
-                :client_options => {site: ENV['OKTA_ISSUER'], authorize_url: ENV['OKTA_ISSUER'] + "/v1/authorize", token_url: ENV['OKTA_ISSUER'] + "/v1/token"},
+                :client_options => {
+                  site: ENV['OKTA_ISSUER'],
+                  authorize_url: ENV['OKTA_ISSUER'] + "/v1/authorize",
+                  token_url: ENV['OKTA_ISSUER'] + "/v1/token"
+                },
                 :redirect_uri => ENV["OKTA_REDIRECT_URI"],
                 :auth_server_id => ENV['OKTA_AUTH_SERVER_ID'],
                 :issuer => ENV['OKTA_ISSUER'],

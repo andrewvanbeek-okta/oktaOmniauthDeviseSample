@@ -22,7 +22,7 @@
     <% else %>
     <%= link_to "App Dashboard", users_path(), class: "item"%>
     <%= link_to session[:oktastate][:info][:name], user_path(session[:oktastate][:uid]), class: "item" %>
-    <%= link_to "logout", ENV['OKTA_URL'] + "/login/signout?fromURI=" + request.base_url + "/logout", class: "item" %>
+    <%= link_to "logout", 'https://' + ENV['OKTA_URL'] + "/login/signout?fromURI=" + request.base_url + "/logout", class: "item" %>
     <% end %>
   </div>
 </div>
